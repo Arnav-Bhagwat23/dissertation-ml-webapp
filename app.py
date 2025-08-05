@@ -4,8 +4,6 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.neighbors import KNeighborsRegressor
@@ -14,7 +12,6 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-import joblib
 import os
 
 # Page configuration
@@ -601,7 +598,6 @@ elif page == "📋 Methodology":
     - K-Nearest Neighbors
     - Support Vector Regression
     - Neural Networks
-    - LightGBM
     
     **Evaluation Metrics:**
     - Mean Absolute Percentage Error (MAPE)
@@ -638,15 +634,12 @@ elif page == "📋 Methodology":
         
         **🤖 Machine Learning:**
         - Scikit-learn for traditional ML
-        - LightGBM for gradient boosting
         - Cross-validation for validation
         """)
     
     with col2:
         st.markdown("""
         **📈 Visualization:**
-        - Matplotlib for static plots
-        - Seaborn for statistical plots
         - Plotly for interactive charts
         
         **🌐 Web Deployment:**
